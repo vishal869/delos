@@ -887,7 +887,7 @@ input:-moz-placeholder, textarea:-moz-placeholder {
         line-height: 28px;
     }
     .sem-wrapper{
-        padding: 30px 0 20px;
+        padding:0px 0 20px;
     }
     .sem-wrapper .content-block h4{
         font-size: 24px;
@@ -900,5 +900,31 @@ input:-moz-placeholder, textarea:-moz-placeholder {
     .sem-wrapper .container .row{
         margin:0;
     }
+    .coumn-wrapper .column-ui .content-ui{
+        padding:20px 0 10px;
+    }
+    .services-wrapper{
+        padding: 40px 0 0 ;
+    }
+    .contact-detail{
+        padding: 20px;
+    }
+    .contact-section-wrapper{
+        padding-top: 0;
+    }
 
+    .contact-section-wrapper .container,
+     .contact-section-wrapper .container [class*="col-"]{
+        padding: 0;
+    }
+    .contact-section-wrapper .container .row{
+        margin:0;
+    }
+    .contact-section-wrapper form,
+    .contact-section-wrapper h4{
+        padding: 0 15px;
+    }
+    .contact-section-wrapper h4{
+        padding-top: 20px;
+    }
 }
