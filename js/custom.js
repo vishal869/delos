@@ -8,8 +8,8 @@ var preloader = $('#preloader');
 
 // aos animation function start
 AOS.init({
-  offset: 120,
-  duration: 850,
+  offset: 20,
+  duration: 250,
   delay: 50,
   once:true,
   easing: 'ease-out',
