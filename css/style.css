@@ -20,6 +20,9 @@ body{
     max-width: 1200px;
     margin: auto;
 }
+.navbar-icon {
+    display: none;
+}
 /* loader css start */
 #preloader {
   position: fixed;
@@ -689,12 +692,38 @@ input:-moz-placeholder, textarea:-moz-placeholder {
     }
 }
 
+@media only screen and (max-width:1199px){
+    .hero-section .carousel-caption h5{
+            font-size: 48px;
+            color: #fff;
+            line-height: 50px;
+            margin-bottom: 20px;
+    }
+    .hero-section .carousel-caption p{
+        font-size: 18px;
+        line-height: 22px;
+    }
+    .logo img{
+        width:170px;
+    }
+
+    .carousel-item img{
+        height:600px;
+        object-fit: cover;
+        object-position: center;
+    }
+    .hero-section .carousel-caption{
+        left:5%;
+    }
+    .sem-wrapper .content-block:before{
+        display: none;
+    }
+}
+
 @media only screen and (max-width:991px){
     section.about-wrapper .image-block{
         display: none;
     }
-}
-@media only screen and (max-width:767px){
     .sem-wrapper .content-block{
         width: 100%;
         position: relative;
@@ -707,4 +736,169 @@ input:-moz-placeholder, textarea:-moz-placeholder {
         margin: 0;
 
     }
+
+    .services-wrapper{
+        margin-top: 0;
+        padding:100px 0 100px;
+    }
+    .coumn-wrapper{
+        flex-wrap: wrap;
+    }
+    .coumn-wrapper .column-ui{
+        position: relative;
+        width: 100%;
+        flex-wrap:nowrap;
+        margin-bottom: 30px;
+    }
+    .coumn-wrapper .column-ui:nth-child(odd) figure{
+        order:1;
+    }
+
+    .coumn-wrapper .column-ui .content-ui {
+        width: calc(100% - 300px);
+    }
+    .coumn-wrapper .column-ui figure {
+        width: 300px;
+    }
+    .contact-section-wrapper .col-lg-5 {
+        order: 1;
+    }
+    .contact-section-wrapper .col-lg-6 {
+        order: 2;
+        padding-top: 40px;
+    }
+    .contact-section-wrapper{
+        padding:20px 0 60px;
+    }
+
+   
+    /*.navigation-main{
+        display: none;
+    }*/
+    .logo img{
+        width:170px;
+    }
+    .navigation-main ul li a{
+        font-size: 14px;
+    }
+    .navigation-main ul li{
+        padding: 0 10px;
+    }
+    .sem-wrapper .content-block .logo-ui{
+        margin-bottom: 20px;
+        display: inline-block;
+    }
+    .sem-wrapper .content-block .logo-ui img {
+        width: 160px;
+    }
+}
+@media only screen and (max-width:767px){
+    .block-right-header{
+        display: none;
+    }
+    .footer-social-list{
+        justify-content: center;
+    }
+    
+    .copyright-ui{
+        padding-top: 20px;
+        text-align: center;
+    }
+     .navbar-icon {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        width: 28px;
+        height: 28px;
+        background: none;
+        border: none;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin-right:0px;
+    }
+    .navbar-icon:focus{
+        outline: none;
+        box-shadow: none;
+    }
+    .navbar-icon span {
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: space-between;
+    }
+    .coumn-wrapper .column-ui figure{
+        width:250px;
+    }
+    .coumn-wrapper .column-ui .content-ui{
+        width:calc(100% - 250px);
+    }
+    .coumn-wrapper .column-ui .content-ui h6{
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+    .coumn-wrapper .column-ui .content-ui p{
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .services-wrapper {
+        padding: 40px 0;
+    }
+    .carousel-item img{
+        height: 450px;
+    }
+    .hero-section .carousel-caption{
+        left: 0;
+        padding: 0 30px;
+    }
+}
+
+
+@media only screen and (max-width:599px){
+    .coumn-wrapper .column-ui{
+        flex-wrap: wrap;
+    }
+    .coumn-wrapper .column-ui figure,
+    .coumn-wrapper .column-ui .content-ui{
+        width: 100%;
+    }
+    .hero-section .carousel-caption h5{
+        font-size: 32px;
+        line-height:38px;
+    }
+    .hero-section .carousel-caption{
+        top:22%;
+    }
+    .sem-wrapper .content-block{
+        padding: 25px 15px;
+    }
+
+    .sem-wrapper .content-block p{
+        line-height: 24px;
+        font-size: 16px;
+
+    }
+    .about-wrapper p{
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .sem-wrapper{
+        padding: 30px 0 20px;
+    }
+    .sem-wrapper .content-block h4{
+        font-size: 24px;
+        line-height: 30px;
+    }
+    .sem-wrapper .container,
+     .sem-wrapper .container [class*="col-"]{
+        padding: 0;
+    }
+    .sem-wrapper .container .row{
+        margin:0;
+    }
+
 }
