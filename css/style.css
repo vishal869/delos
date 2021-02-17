@@ -746,6 +746,149 @@ input:-moz-placeholder, textarea:-moz-placeholder {
 }
 
 
+
+
+
+/*sem page css start */
+.inner-banner-wrapper{
+    position: relative;
+    padding-top: 92px;
+
+}
+.inner-banner-wrapper .innerbanner-img{
+        object-fit: cover;
+        object-position: center;
+        width:100%;
+        height: 528px;
+ }
+
+ .banner-logo {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 100%;
+    text-align: center;
+    transform: translateY(-50%);
+}
+.info-wrapper {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    padding:30px 0;
+    background:#1b1b1b;
+}
+
+.info-wrapper h4{
+    font-size: 32px;
+    color: #fff;
+    line-height: 32px;
+    font-weight:800;
+    margin-bottom: 16px;
+}
+.info-wrapper p{
+    font-size: 22px;
+    line-height: 32px;
+    color: #ffffff;
+}
+
+
+
+/* video secttion css start */
+.video-wrapper{
+    padding:120px 0 60px;
+}
+.video-wrapper video{
+    margin-bottom: 100px;
+    height: auto;
+}
+.video-info{
+    color:#181c23;
+    font-size: 22px;
+    line-height: 32px;
+    text-align: center;
+}
+
+
+
+.innerpage-services{
+    padding:50px 0 150px;
+    margin:0;
+    background: #fff;
+}
+.innerpage-services .coumn-wrapper .column-ui{
+    width: 25%;
+}
+.innerpage-services .coumn-wrapper .column-ui .content-ui p{
+    color: #adadad;
+    font-size: 14px;
+}
+.innerpage-services .coumn-wrapper .column-ui .content-ui h6{
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.innerpage-services .coumn-wrapper .column-ui .content-ui{
+     min-height: 253px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.innerpage-services .coumn-wrapper .column-ui:nth-child(odd) .content-ui:after{
+    border-top: 10px solid #fff;
+}
+.innerpage-services .coumn-wrapper .column-ui:nth-child(even) .content-ui:after{
+    border-bottom: 10px solid #fff;
+}
+
+
+
+/*faq section html start */
+
+
+.panel-group .panel-heading {
+  padding: 0;
+}
+
+.panel-group .panel-heading a {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  position: relative;
+}
+
+.panel-group .panel-heading a:after {
+  content: '-';
+  float: right;
+}
+
+.panel-group .panel-heading a.collapsed:after {
+  content: '+';
+}
+
+.faq-wrapper .panel-heading a {
+    background: #130530;
+    color: #fff;
+    font-size: 18px;
+}
+.faq-wrapper .panel-body{
+    border: 2px solid #130530;
+    padding: 20px;
+}
+.panel.panel-default{
+    margin-bottom: 10px;
+}
+.faq-wrapper .heading{ 
+    color:#e14429; 
+    font-size: 34px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
 @media only screen and (max-width:1350px){
     .seo-wrapper .image-block{
         margin-right:0;
@@ -789,6 +932,12 @@ input:-moz-placeholder, textarea:-moz-placeholder {
     }
     .hero-section{
          padding-top:72px;
+    }
+    .inner-banner-wrapper{
+        padding-top: 72px;
+    }
+    .banner-logo img {
+        max-width: 350px;
     }
 }
 
@@ -864,6 +1013,23 @@ input:-moz-placeholder, textarea:-moz-placeholder {
         width: 160px;
     }
 
+    .innerpage-services .coumn-wrapper .column-ui{
+        width: 100%;
+    }
+
+    .banner-logo img {
+        max-width:300px;
+    }
+    .video-wrapper{
+        padding:60px 0 60px;
+    }
+    .video-wrapper video{
+        margin-bottom: 60px;
+    }
+    .faq-wrapper {
+        margin-bottom:30px;
+    }
+
 }
 @media only screen and (max-width:767px){
     .carousel-item{
@@ -879,7 +1045,7 @@ input:-moz-placeholder, textarea:-moz-placeholder {
         background: rgba(0,0,0,0.5);
     }
      .carousel-item img{
-        object-position: right;
+        object-position: 79% center;
      }
     .block-right-header{
         display: none;
@@ -978,6 +1144,12 @@ input:-moz-placeholder, textarea:-moz-placeholder {
         text-align: left;
         margin-bottom: 15px;
     }
+    .video-wrapper video{
+        margin-bottom: 40px;
+    }
+    .video-wrapper{
+        padding-bottom: 30px;
+    }
 }
 
 
@@ -1049,5 +1221,17 @@ input:-moz-placeholder, textarea:-moz-placeholder {
     }
     .contact-section-wrapper h4{
         padding-top: 20px;
+    }
+    .innerpage-services .coumn-wrapper .column-ui .content-ui{
+        min-height: auto;
+    }
+
+    .info-wrapper p{
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .video-info{
+        font-size: 18px;
+        line-height: 28px;
     }
 }
