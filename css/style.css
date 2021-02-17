@@ -822,13 +822,13 @@ input:-moz-placeholder, textarea:-moz-placeholder {
 }
 .innerpage-services .coumn-wrapper .column-ui .content-ui p{
     color: #adadad;
-    font-size: 14px;
+    font-size: 16px;
 }
 .innerpage-services .coumn-wrapper .column-ui .content-ui h6{
     font-size: 20px;
     line-height: 24px;
     margin-bottom: 20px;
-    text-align: center;
+    text-align: left;
 }
 .innerpage-services .coumn-wrapper .column-ui .content-ui{
      min-height: 253px;
@@ -1150,6 +1150,22 @@ input:-moz-placeholder, textarea:-moz-placeholder {
     .video-wrapper{
         padding-bottom: 30px;
     }
+
+    .panel-group .panel-heading a{
+        padding:10px 26px 10px 15px;
+    }
+    .panel-group .panel-heading a:after {
+        content: '-';
+        top: 50%;
+        transform: translateY(-50%);
+        right: 10px;
+        position: absolute;
+        font-size: 30px;
+    }
+    .faq-wrapper .panel-heading a{
+        font-size: 16px;
+        line-height: 25px;
+    }
 }
 
 
@@ -1233,5 +1249,8 @@ input:-moz-placeholder, textarea:-moz-placeholder {
     .video-info{
         font-size: 18px;
         line-height: 28px;
+    }
+    .inner-banner-wrapper .innerbanner-img{
+        object-position: 70% center;
     }
 }
