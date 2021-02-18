@@ -889,6 +889,144 @@ input:-moz-placeholder, textarea:-moz-placeholder {
 }
 
 
+
+
+/* seo page  html start */
+
+.after-before-wrapper {
+    text-align: center;
+    padding: 80px 0 40px;
+    overflow: hidden;
+}
+.after-before-wrapper h4{
+    color: #e14429;
+    font-size: 34px;
+    line-height:normal;
+    font-weight: bold;
+    margin-bottom: 44px;
+}
+.google-search-ui p {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #1b1b1b;
+    font-weight: 800;
+    margin-top: 15px;
+    letter-spacing: 1px;
+}
+.google-search-ui figure{
+    width: 100%;
+}
+.google-search-ui figure img{
+    width:100%;
+}
+
+
+.local-search-wrapper{
+    background: #1b1b1b;
+    padding:80px 0;
+    overflow: hidden;
+}
+.local-search-wrapper .heading-block{
+    text-align: center;
+    margin-bottom: 60px;
+}
+.local-search-wrapper .heading-block h4{
+    color: #e14429;
+    font-size: 34px;
+    line-height: normal;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.local-search-wrapper .heading-block label{
+    color: #adadad;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+.local-search-wrapper .heading-block p{
+    color: #adadad;
+    font-size: 18px;
+    line-height:26px;
+    width: 100%;
+    max-width: 770px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.local-search-wrapper figure{
+    background:#fff;
+    width:100%;
+}
+.local-search-wrapper figure img{
+    width:100%;
+}
+.local-search-wrapper .content-ui h4{
+    color:#e14429;
+    margin-bottom: 10px;
+    font-size: 24px;
+    line-height:30px;
+    font-weight:bold;
+}
+.local-search-wrapper .content-ui p{
+    font-size: 17px;
+    line-height: 24px;
+    color: #adadad;
+}
+.local-search-wrapper .content-ui{
+    position: relative;
+    padding-left:40px;
+}
+.local-search-wrapper .content-ui:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 22px;
+    background: url("../images/before-icon.png") no-repeat;
+    top:7px;
+    margin-left: -32px;
+}
+.p-b40{
+    padding-bottom: 40px;
+}
+
+
+.description-wrapper{
+    padding: 70px 0;
+    text-align: center;
+}
+
+
+.description-wrapper h5{
+    font-size: 34px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #e14429;
+}
+.description-wrapper p{
+    color: #adadad;
+    font-size: 16px;
+    line-height: 26px;
+    width: 100%;
+    max-width: 770px;
+    display: inline-block;
+    margin-bottom: 50px;
+}
+.description-inner-ui h6{
+    font-size: 16px;
+    color:#adadad;
+    line-height: 24px;
+    max-width: 770px;
+    display: inline-block;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+.m-t50{
+    margin-top: 50px;
+}
+
+
+
 @media only screen and (max-width:1350px){
     .seo-wrapper .image-block{
         margin-right:0;
@@ -1166,6 +1304,51 @@ input:-moz-placeholder, textarea:-moz-placeholder {
         font-size: 16px;
         line-height: 25px;
     }
+
+    .info-wrapper h4{
+        font-size: 26px;
+    }
+
+    .info-wrapper p{
+        font-size: 18px;
+    }
+
+    .after-before-wrapper h4{
+        font-size: 26px;
+    }
+    .after-before-wrapper p{
+        font-size: 18px;
+    }
+    .local-search-wrapper figure{
+        max-width: 400px;
+        text-align: center;
+        margin: auto;
+        margin-bottom: 15px;
+    }
+    .local-search-wrapper .content-ui {
+        position: relative;
+        padding-left: 00px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    .local-search-wrapper .content-ui h4{
+        display: inline-block;
+    }
+
+    .local-search-wrapper .heading-block p,
+    .local-search-wrapper .content-ui p{
+        font-size: 14px;
+    }
+    .description-wrapper h5{
+        font-size: 26px;
+    }
+    .description-wrapper{
+        padding-bottom: 0;
+    }
+    .after-before-wrapper{
+        padding-top: 40px;
+    }
+
 }
 
 
@@ -1252,5 +1435,16 @@ input:-moz-placeholder, textarea:-moz-placeholder {
     }
     .inner-banner-wrapper .innerbanner-img{
         object-position: 70% center;
+    }
+
+    .local-search-wrapper .content-ui h4{
+        font-size: 20px;
+    }
+    .local-search-wrapper{
+        padding-bottom: 0;
+    }
+    .description-wrapper p{
+        font-size: 14px;
+        margin-bottom: 15px;
     }
 }
