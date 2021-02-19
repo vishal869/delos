@@ -869,12 +869,12 @@ input:-moz-placeholder, textarea:-moz-placeholder {
 }
 
 .faq-wrapper .panel-heading a {
-    background: #130530;
+    background:#1b1b1b;
     color: #fff;
     font-size: 18px;
 }
 .faq-wrapper .panel-body{
-    border: 2px solid #130530;
+    border: 2px solid #1b1b1b;
     padding: 20px;
 }
 .panel.panel-default{
@@ -1013,13 +1013,18 @@ input:-moz-placeholder, textarea:-moz-placeholder {
     margin-bottom: 50px;
 }
 .description-inner-ui h6{
-    font-size: 16px;
-    color:#adadad;
-    line-height: 24px;
+    font-size: 17.33px;
+    color:#e14429;
+    line-height: 26px;
     max-width: 770px;
     display: inline-block;
     margin-bottom: 50px;
     font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+.description-inner-ui h6 span{
+    display: block;
+    margin-top: 15px;
 }
 .m-t50{
     margin-top: 50px;
