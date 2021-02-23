@@ -1137,7 +1137,7 @@ input:-moz-placeholder, textarea:-moz-placeholder {
 .about-features-cicle.feature-cicle-2 {
     width: 130px;
     height:130px;
-    right: 4px;
+    right:-30px;
     top: 64px;
 }
 .about-features-cicle.feature-cicle-3 {
@@ -1163,7 +1163,7 @@ input:-moz-placeholder, textarea:-moz-placeholder {
     width: 130px;
     height: 130px;
     top: 64px;
-    left: 30px;
+    left:-30px;
 }
 .about-features-cicle span {
     color: #ef6c2f;
