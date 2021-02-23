@@ -1131,8 +1131,8 @@ input:-moz-placeholder, textarea:-moz-placeholder {
 .about-features-cicle.feature-cicle-1 {
         width: 130px;
         height: 130px;
-        left: 269px;
-        top: -45px;
+        left: 230px;
+        top: -50px;
 }
 .about-features-cicle.feature-cicle-2 {
     width: 130px;
@@ -1151,13 +1151,13 @@ input:-moz-placeholder, textarea:-moz-placeholder {
      width: 130px;
     height: 130px;
     bottom: -30px;
-    right: 220px;
+    left: 230px;
 }
 .about-features-cicle.feature-cicle-5 {
    width: 130px;
     height: 130px;
-    left: 36px;
-    top: 415px; 
+    left: -33px;
+    top:313px; 
 }
 .about-features-cicle.feature-cicle-6 {
     width: 130px;
@@ -1168,7 +1168,7 @@ input:-moz-placeholder, textarea:-moz-placeholder {
 .about-features-cicle span {
     color: #ef6c2f;
     font-size: 14px;
-    font-weight: 500;
+    font-weight:600;
     line-height: 20px;
     position: absolute;
     top: 50%;
@@ -1292,12 +1292,33 @@ input:-moz-placeholder, textarea:-moz-placeholder {
     padding-left: 55px;
 }
 
+.hide-mob-991{
+    display: none;
+}
+
 @media screen and (max-width: 1400px){
     .block-circle-ui {
         -webkit-transform: scale(0.9);
         -ms-transform: scale(0.9);
         transform: scale(0.9);
     }
+}
+
+@media screen and (max-width: 1300px){
+.block-circle-ui {
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+}
+}
+
+@media screen and (max-width:1200px){
+.block-circle-ui {
+    -webkit-transform-origin: left center;
+    -ms-transform-origin: left center;
+    transform-origin: left center;
+    transform: scale(0.8);
+}
 }
 
 
@@ -1351,6 +1372,14 @@ input:-moz-placeholder, textarea:-moz-placeholder {
     }
     .banner-logo img {
         max-width: 350px;
+    }
+    .about-we-block{
+        padding-top: 140px;
+    }
+
+    .in-hero-content h2{
+        font-size: 40px;
+        line-height:48px;
     }
 }
 
@@ -1441,6 +1470,58 @@ input:-moz-placeholder, textarea:-moz-placeholder {
     }
     .faq-wrapper {
         margin-bottom:30px;
+    }
+
+    .hide-mob-991{
+        display: block;
+    }
+    .hide-web-991{
+        display: none;
+    }
+    .caresoft-who-we {
+        margin-bottom: 15px;
+        border-radius: 4px;
+    }
+    .caresoft-who-we ul {
+        margin: 0 -15px;
+        padding: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    }
+    .caresoft-who-we ul li {
+        padding: 0 15px;
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+        margin-bottom: 10px;
+    }
+    .caresoft-who-we ul li span {
+        display: inline-block;
+        width: 100%;
+        background-color: #fff;
+        border-radius: 4px;
+        padding: 15px;
+        box-shadow: 0 40px 100px -20px rgb(9 24 37 / 24%);
+    }
+    .caresoft-who-we h3 {
+        color:#ef6c2f;
+        font-size: 24px;
+        font-weight: 800;
+        margin-bottom: 10px;
+        letter-spacing: -0.4px;
+    }
+    .order-lg-2{
+        order: 2;
+    }
+
+    .content-big{
+        font-size: 16px;
+        line-height: 26px;
+        margin-bottom: 20px;
     }
 
 }
@@ -1624,6 +1705,12 @@ input:-moz-placeholder, textarea:-moz-placeholder {
         padding-top: 40px;
     }
 
+    .am-right-block{
+        width:100%;
+        padding-top: 20px;
+        padding-left: 0;
+    }
+
 }
 
 
@@ -1725,30 +1812,11 @@ input:-moz-placeholder, textarea:-moz-placeholder {
 }
 
 
-.animated {
-  -webkit-animation-duration: 1s;
-  animation-duration: 1s;
-  -webkit-animation-fill-mode: both;
-  animation-fill-mode: both; }
-
-.animated.infinite {
-  -webkit-animation-iteration-count: infinite;
-  animation-iteration-count: infinite; }
-
-.animated.hinge {
-  -webkit-animation-duration: 2s;
-  animation-duration: 2s; }
-
-.animated.flipOutX,
-.animated.flipOutY,
-.animated.bounceIn,
-.animated.bounceOut {
-  -webkit-animation-duration: .75s;
-  animation-duration: .75s; }
-
-.wow {
-  -webkit-transition-property: opacity,-webkit-transform;
-  transition-property: opacity,-webkit-transform;
-  -o-transition-property: opacity,transform;
-  transition-property: opacity,transform;
-  transition-property: opacity,transform,-webkit-transform; }
+@media only screen and (max-width:575px){
+    .caresoft-who-we ul li {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
