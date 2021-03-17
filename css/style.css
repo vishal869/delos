@@ -1202,6 +1202,7 @@ input:-moz-placeholder, textarea:-moz-placeholder {
 
 .cs-about-management {
     padding: 62px 0 0px;
+    position: relative;
 }
 .heading2 {
     color: #e14429;
@@ -1296,6 +1297,21 @@ input:-moz-placeholder, textarea:-moz-placeholder {
     display: none;
 }
 
+
+.cs-about-management:after{
+    position: absolute;
+    content: "";
+    background: url(../images/about-bg.png) no-repeat;
+    width:40%;
+    height:100%;
+    background-size: 100%;
+    right: 0;
+    top:70px;
+}
+.am-detail{
+    position: relative;
+    z-index: 4;
+}
 @media screen and (max-width: 1400px){
     .block-circle-ui {
         -webkit-transform: scale(0.9);
@@ -1380,6 +1396,9 @@ input:-moz-placeholder, textarea:-moz-placeholder {
     .in-hero-content h2{
         font-size: 40px;
         line-height:48px;
+    }
+    .cs-about-management:after{
+        display: none;
     }
 }
 
