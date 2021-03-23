@@ -1312,6 +1312,11 @@ input:-moz-placeholder, textarea:-moz-placeholder {
     position: relative;
     z-index: 4;
 }
+
+.video-wrapper video:focus{
+    outline: none;
+}
+
 @media screen and (max-width: 1400px){
     .block-circle-ui {
         -webkit-transform: scale(0.9);
