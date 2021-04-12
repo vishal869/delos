@@ -800,7 +800,7 @@ input:-moz-placeholder, textarea:-moz-placeholder {
     padding:120px 0 60px;
 }
 .video-wrapper video{
-    margin-bottom: 100px;
+    margin-bottom:0px;
     height: auto;
 }
 .video-info{
@@ -1317,6 +1317,47 @@ input:-moz-placeholder, textarea:-moz-placeholder {
     outline: none;
 }
 
+
+
+.dealer-testimonal .heading{
+    color: #e14429;
+    font-size: 34px;
+    margin-bottom: 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.ct-card{
+  padding: 20px;
+}
+.ct-card figure{ margin-bottom: 20px; }
+.ct-content p {
+    font-size: 18px;
+    line-height: 28px;
+    color: #181c23;
+    text-align: left;
+    padding-bottom: 15px;
+    min-height:240px;
+}
+.ct-content .post-by p{
+  font-weight:600;
+  min-height: auto;
+}
+
+.client-testimonial .slick-arrow{
+  display: none !important;
+}
+
+.client-testimonial .slick-dots{ display: flex; justify-content: center; }
+.client-testimonial .slick-dots li button{ width:12px; height:12px; background:#000; border:none; border-radius:100%; padding: 0;
+font-size: 0; opacity: 0.5; }
+.client-testimonial .slick-dots li button:focus{
+  outline:none;
+}
+.client-testimonial .slick-dots li{ margin: 0 4px; }
+.client-testimonial .slick-dots li.slick-active button{background: #e14429; opacity: 1;}
+
+
 @media screen and (max-width: 1400px){
     .block-circle-ui {
         -webkit-transform: scale(0.9);
@@ -1734,6 +1775,54 @@ input:-moz-placeholder, textarea:-moz-placeholder {
         width:100%;
         padding-top: 20px;
         padding-left: 0;
+    }
+
+    .innerpage-services .container {
+        padding: 0;
+    }
+
+    .coumn-wrapper {
+      flex-wrap:initial;
+        flex-direction: row;
+        overflow-x: auto;
+    }
+
+    .innerpage-services .coumn-wrapper .column-ui:first-child{
+      margin-left:15px;
+    }
+
+    .innerpage-services .coumn-wrapper .column-ui {
+        width: 251px;
+        min-width: 250px;
+        padding-right: 20px;
+    }
+    .innerpage-services .coumn-wrapper .column-ui .content-ui h6 {
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 20px;
+        text-align: center;
+        position: absolute;
+        top: -50px;
+        background: #e14429;
+        width: 100%;
+        color: #fff;
+        padding: 10px;
+        min-height: 50px;
+    }
+    .innerpage-services .coumn-wrapper .column-ui .content-ui p{
+      font-size: 14px;
+    }
+    .innerpage-services .coumn-wrapper .column-ui:nth-child(odd) .content-ui:after{
+     border-bottom: 10px solid #fff !important;
+    border-top: none !important;
+    top: -15px;
+    bottom: initial;
+    }
+
+    .ct-content p{
+      font-size:14px;
+      min-height:auto;
+      overflow: hidden;
     }
 
 }
