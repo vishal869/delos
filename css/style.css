@@ -735,8 +735,8 @@ input:-moz-placeholder, textarea:-moz-placeholder {
     border-radius: 100%;
 }
 .footer-social-list li a.fb:hover{background:#38529a; border-color:#38529a;}
-.footer-social-list li a.twiter:hover{ background:#1dcaff; border-color:#1dcaff; }
-.footer-social-list li a.gplus:hover{background:#da4746; border-color:#da4746;}
+.footer-social-list li a.twiter:hover{ background:#0a66c2; border-color:#0a66c2; }
+.footer-social-list li a.gplus:hover{background:#ed4a64; border-color:#ed4a64;}
 .footer-social-list li a.youtube:hover{background:#f70000; border-color:#f70000;}
 .footer-social-list li a.vimeo:hover{background:#42b5f7; border-color:#42b5f7;}
 .copyright-ui {
@@ -745,7 +745,33 @@ input:-moz-placeholder, textarea:-moz-placeholder {
     font-size: 14px;
 }
 
-
+.carousel-caption .logo-ui {
+    width: 250px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+.carousel-caption .logo-ui img {
+    width: 100%;
+    height:auto;
+}
+.carousel-caption.text-center h5{
+  font-size: 28px;
+  line-height: normal;
+  margin-bottom:30px;
+}
+.carousel-caption.text-center h5 span{
+  display: inline-block;
+}
+.carousel-caption.text-center .primary-btn{
+  background: transparent;
+  color:#f36d2c;
+  border:none;
+}
+.carousel-caption.text-center .primary-btn:hover{
+  text-decoration: underline;
+  background: none;
+  border:none;
+}
 
 
 
@@ -1368,7 +1394,7 @@ font-size: 0; opacity: 0.5; }
 }
 
 .reporting-section{
-  padding:80px 0;
+  padding:20px 0 90px;
 }
 .reporting-section .heading{
     color: #e14429;
