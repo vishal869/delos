@@ -16,6 +16,12 @@ AOS.init({
 })
   // aos animation function end
 
+// $('#carouselExampleIndicators').carousel({
+//   interval: 3000,
+//   cycle: true
+// }); 
+
+
 $(window).scroll(function(){
   if ($(this).scrollTop() > 30) {
      $('.header-main-block').addClass('fixed');
