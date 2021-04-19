@@ -750,6 +750,9 @@ input:-moz-placeholder, textarea:-moz-placeholder {
     margin: auto;
     margin-bottom: 20px;
 }
+
+
+
 .hero-section .third-slide .carousel-caption {
     max-width: 300px;
     left: 14%;
@@ -2046,5 +2049,21 @@ font-size: 0; opacity: 0.5; }
 @media only screen and (max-width:400px){
   .hero-section .third-slide .carousel-caption{
     left:5%;
+  }
+}
+
+
+@media only screen and (min-width:1700px){
+   .carousel-caption .logo-ui{
+    width:450px;
+  }
+}
+
+@media only screen and (min-width:1400px){
+  .carousel-caption .logo-ui{
+    width:350px;
+  }
+  .carousel-caption.text-center h5 span{
+    font-size: 36px;
   }
 }
