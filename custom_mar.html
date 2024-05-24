@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" media="screen" href="marquee_style.css" />
+<style>
+@keyframes marquee {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(calc(-100% - 20px));
+    }
+}
+.marquee {
+    display: flex;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    gap: 20px;
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.marquee--inner {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 80px;
+    min-width: 100%;
+    animation: marquee 25s linear infinite;
+    .epic {
+        width: 50px;
+        height: 61px;
+    }
+    .google {
+        width: 89px;
+        height: 30px;
+    }
+    .amazon {
+        width: 94px;
+        height: 25px;
+    }
+    .shopify {
+        width: 86px;
+        height: 25px;
+    }
+    .meta {
+        width: 98px;
+        height: 19px;
+    }
+    .salesforce {
+        width: 55px;
+        height: 38px;
+    }
+}
+</style>
+</head>
+<body>
+
+    <div class="marquee stop">
+        <div class="marquee--inner">
+          <div class="mq-data">
+            <img class="epic" src="https://cdn.dribbble.com/uploads/47177/original/3986915be548424a5d36657f2b034ead.jpeg?">
+          </div>
+          <div class="mq-data">
+            <img class="epic" src="https://cdn.dribbble.com/uploads/47177/original/3986915be548424a5d36657f2b034ead.jpeg?">
+          </div>
+          <div class="mq-data">
+            <img class="epic" src="https://cdn.dribbble.com/uploads/47177/original/3986915be548424a5d36657f2b034ead.jpeg?">
+          </div>
+          <div class="mq-data">
+            <img class="epic" src="https://cdn.dribbble.com/uploads/47177/original/3986915be548424a5d36657f2b034ead.jpeg?">
+          </div>
+          <div class="mq-data">
+            <img class="epic" src="https://cdn.dribbble.com/uploads/47177/original/3986915be548424a5d36657f2b034ead.jpeg?">
+          </div>
+          <div class="mq-data">
+            <img class="epic" src="https://cdn.dribbble.com/uploads/47170/original/cd3266dde4f00a5d6a509c7375ddaecd.png">
+          </div>
+        </div>
+        <div class="marquee--inner" aria-hidden="true">
+          <div class="mq-data">
+            <img class="epic" src="https://cdn.dribbble.com/uploads/47177/original/3986915be548424a5d36657f2b034ead.jpeg?">
+          </div>
+          <div class="mq-data">
+            <img class="epic" src="https://cdn.dribbble.com/uploads/47177/original/3986915be548424a5d36657f2b034ead.jpeg?">
+          </div>
+          <div class="mq-data">
+            <img class="epic" src="https://cdn.dribbble.com/uploads/47177/original/3986915be548424a5d36657f2b034ead.jpeg?">
+          </div>
+          <div class="mq-data">
+            <img class="epic" src="https://cdn.dribbble.com/uploads/47177/original/3986915be548424a5d36657f2b034ead.jpeg?">
+          </div>
+          <div class="mq-data">
+            <img class="epic" src="https://cdn.dribbble.com/uploads/47177/original/3986915be548424a5d36657f2b034ead.jpeg?">
+          </div>
+          <div class="mq-data">
+            <img class="epic" src="https://cdn.dribbble.com/uploads/47170/original/cd3266dde4f00a5d6a509c7375ddaecd.png">
+          </div>
+        </div>
+      </div>
+</body>
+</html>
+
+
