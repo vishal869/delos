@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" media="screen" href="marquee_style.css" />
 <style>
-@keyframes marquee {
+/* @keyframes marquee {
     0% {
         transform: translateX(0);
     }
@@ -13,7 +13,7 @@
         transform: translateX(calc(-100% - 20px));
     }
 }
-.marquee {
+.marquee-test {
     display: flex;
     overflow: hidden;
     -webkit-user-select: none;
@@ -24,7 +24,7 @@
     overflow: hidden;
     white-space: nowrap;
 }
-.marquee--inner {
+.marquee--inner-test {
     flex-shrink: 0;
     display: flex;
     align-items: center;
@@ -36,12 +36,124 @@
 }
 .mq-data img{
   height:80px;
+} */
+
+
+@keyframes slides {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
+
+.logos {
+  overflow: hidden;
+  padding: 30px 0px;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logo_items {
+  display: inline-block;
+  animation: 35s slides infinite linear;
+}
+
+.logo_items img{
+  height:80px;
+}
+.mq-data{
+  display: inline-block;
+  padding:0 25px;
+}
+
 </style>
 </head>
 <body>
 
-    <div class="marquee stop">
+  <div class="logos">
+    <div class="logo_items">
+      <div class="mq-data">
+        <img class="epic" src="images/hotel_brand_logo1.jpg">
+      </div>
+      <div class="mq-data">
+        <img class="epic" src="images/hotel_brand_logo2.jpg">
+      </div>
+      <div class="mq-data">
+        <img class="epic" src="images/hotel_brand_logo3.jpg">
+      </div>
+      <div class="mq-data">
+        <img class="epic" src="images/hotel_brand_logo4.jpg">
+      </div>
+      <div class="mq-data">
+        <img class="epic" src="images/hotel_brand_logo5.jpg">
+      </div>
+      <div class="mq-data">
+        <img class="epic" src="images/hotel_brand_logo6.jpg">
+      </div>
+      <div class="mq-data">
+        <img class="epic" src="images/hotel_brand_logo7.jpg">
+      </div>
+      <div class="mq-data">
+        <img class="epic" src="images/hotel_brand_logo8.jpg">
+      </div>
+      <div class="mq-data">
+        <img class="epic" src="images/hotel_brand_logo9.jpg">
+      </div>
+      <div class="mq-data">
+        <img class="epic" src="images/hotel_brand_logo10.jpg">
+      </div>
+      <div class="mq-data">
+        <img class="epic" src="images/hotel_brand_logo11.jpg">
+      </div>
+      <div class="mq-data">
+        <img class="epic" src="images/hotel_brand_logo12.jpg">
+      </div>
+    </div>
+
+    <div class="logo_items">
+      <div class="mq-data">
+        <img class="epic" src="images/hotel_brand_logo1.jpg">
+      </div>
+      <div class="mq-data">
+        <img class="epic" src="images/hotel_brand_logo2.jpg">
+      </div>
+      <div class="mq-data">
+        <img class="epic" src="images/hotel_brand_logo3.jpg">
+      </div>
+      <div class="mq-data">
+        <img class="epic" src="images/hotel_brand_logo4.jpg">
+      </div>
+      <div class="mq-data">
+        <img class="epic" src="images/hotel_brand_logo5.jpg">
+      </div>
+      <div class="mq-data">
+        <img class="epic" src="images/hotel_brand_logo6.jpg">
+      </div>
+      <div class="mq-data">
+        <img class="epic" src="images/hotel_brand_logo7.jpg">
+      </div>
+      <div class="mq-data">
+        <img class="epic" src="images/hotel_brand_logo8.jpg">
+      </div>
+      <div class="mq-data">
+        <img class="epic" src="images/hotel_brand_logo9.jpg">
+      </div>
+      <div class="mq-data">
+        <img class="epic" src="images/hotel_brand_logo10.jpg">
+      </div>
+      <div class="mq-data">
+        <img class="epic" src="images/hotel_brand_logo11.jpg">
+      </div>
+      <div class="mq-data">
+        <img class="epic" src="images/hotel_brand_logo12.jpg">
+      </div>
+    </div>
+  </div>
+
+
+    <!-- <div class="marquee stop">
         <div class="marquee--inner">
           <div class="mq-data">
             <img class="epic" src="https://cdn.dribbble.com/uploads/47177/original/3986915be548424a5d36657f2b034ead.jpeg?">
@@ -163,7 +275,7 @@
             <img class="epic" src="images/hotel_brand_logo12.jpg">
           </div>
         </div>
-      </div>
+      </div> -->
 </body>
 </html>
 
