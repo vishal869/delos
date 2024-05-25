@@ -69,6 +69,51 @@
   padding:0 25px;
 }
 
+
+
+.logos-slider {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    position: relative;
+}
+
+.logos-slider-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    animation: slide 30s linear infinite;
+}
+
+.logos-slider-container img {
+  width:auto;
+ max-height: 80px;
+}
+
+@keyframes slide {
+  0% {
+    transform: translate3d(0,0,0)
+  }
+  100% {
+    transform: translate3d(-100%,0,0)
+  }
+}
+
+
+.card {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+  box-shadow: 0px 3px 8px rgb(61 74 84 / 10%), 0px 3px 12px rgb(61 74 84 / 6%)
+}
+
+
+
+
+
 </style>
 </head>
 <body>
@@ -152,6 +197,40 @@
       </div>
     </div>
   </div>
+
+
+
+
+
+  <div class="card">
+    <div class="logos-slider">
+      <div class="logos-slider-container">
+        <img src="https://s3-eu-west-1.amazonaws.com/manus-assets-staging.amboss.com/2021/10/1b5efb6e18709f345d9df2d515ef94ff/AMBOSS_Kliniklizenz_Vinzenz-Gruppe-1.png"/>
+        <img src="https://s3-eu-west-1.amazonaws.com/manus-assets-staging.amboss.com/2021/10/baa838917cbc8d345518f3e132bc8fd7/AMBOSS_Kliniklizenz_Universita%CC%88tsklinikum-Bonn-1.png"/>
+        <img src="https://s3-eu-west-1.amazonaws.com/manus-assets-staging.amboss.com/2021/10/cd3fd64c28d1eaa45dabe4d8030cafa4/AMBOSS_Kliniklizenz_Uniklinikum-Salzburg-1.png"/>
+        <img src="https://s3-eu-west-1.amazonaws.com/manus-assets-staging.amboss.com/2021/10/b5bc29f12bc44a3479e1f5a7a880e5eb/AMBOSS_Kliniklizenz_Rems-Murr-Kliniken-1.png"/>
+        <img src="https://s3-eu-west-1.amazonaws.com/manus-assets-staging.amboss.com/2021/10/5a744744b6aabec44952fe173ad803b3/AMBOSS_Kliniklizenz_Klinikum-Wolfsburg-1.png"/>
+        <img src="https://s3-eu-west-1.amazonaws.com/manus-assets-staging.amboss.com/2021/10/9b08a88ad97780c4ed8c8770043be668/AMBOSS_Kliniklizenz_Klinikum-Brandenburg-1.png"/>
+        <img src="https://s3-eu-west-1.amazonaws.com/manus-assets-staging.amboss.com/2021/10/626e09169400efb489aa78be3b504e62/drk-logo2.png"/>
+        <img src="https://s3-eu-west-1.amazonaws.com/manus-assets-staging.amboss.com/2021/10/8fe266d7a9511b84ddf573354fa7a6d9/AMBOSS_Kliniklizenz_Clinotel-1.png"/>
+        <img src="https://s3-eu-west-1.amazonaws.com/manus-assets-staging.amboss.com/2021/10/e10134edbc072db485aebf5e5decd94d/AwO.png"/>
+        <img src="https://s3-eu-west-1.amazonaws.com/manus-assets-staging.amboss.com/2021/10/cac79a920d8213d429efbaad8d6854fa/AMBOSS_Kliniklizenz_AMEOS-1.png"/>
+      </div>
+    
+      <div class="logos-slider-container">
+        <img src="https://s3-eu-west-1.amazonaws.com/manus-assets-staging.amboss.com/2021/10/1b5efb6e18709f345d9df2d515ef94ff/AMBOSS_Kliniklizenz_Vinzenz-Gruppe-1.png"/>
+        <img src="https://s3-eu-west-1.amazonaws.com/manus-assets-staging.amboss.com/2021/10/baa838917cbc8d345518f3e132bc8fd7/AMBOSS_Kliniklizenz_Universita%CC%88tsklinikum-Bonn-1.png"/>
+        <img src="https://s3-eu-west-1.amazonaws.com/manus-assets-staging.amboss.com/2021/10/cd3fd64c28d1eaa45dabe4d8030cafa4/AMBOSS_Kliniklizenz_Uniklinikum-Salzburg-1.png"/>
+        <img src="https://s3-eu-west-1.amazonaws.com/manus-assets-staging.amboss.com/2021/10/b5bc29f12bc44a3479e1f5a7a880e5eb/AMBOSS_Kliniklizenz_Rems-Murr-Kliniken-1.png"/>
+        <img src="https://s3-eu-west-1.amazonaws.com/manus-assets-staging.amboss.com/2021/10/5a744744b6aabec44952fe173ad803b3/AMBOSS_Kliniklizenz_Klinikum-Wolfsburg-1.png"/>
+        <img src="https://s3-eu-west-1.amazonaws.com/manus-assets-staging.amboss.com/2021/10/9b08a88ad97780c4ed8c8770043be668/AMBOSS_Kliniklizenz_Klinikum-Brandenburg-1.png"/>
+        <img src="https://s3-eu-west-1.amazonaws.com/manus-assets-staging.amboss.com/2021/10/626e09169400efb489aa78be3b504e62/drk-logo2.png"/>
+        <img src="https://s3-eu-west-1.amazonaws.com/manus-assets-staging.amboss.com/2021/10/8fe266d7a9511b84ddf573354fa7a6d9/AMBOSS_Kliniklizenz_Clinotel-1.png"/>
+        <img src="https://s3-eu-west-1.amazonaws.com/manus-assets-staging.amboss.com/2021/10/e10134edbc072db485aebf5e5decd94d/AwO.png"/>
+        <img src="https://s3-eu-west-1.amazonaws.com/manus-assets-staging.amboss.com/2021/10/cac79a920d8213d429efbaad8d6854fa/AMBOSS_Kliniklizenz_AMEOS-1.png"/>
+      </div>
+    </div>
+    </div>  
 
 
     <!-- <div class="marquee stop">
