@@ -1,362 +1,180 @@
 
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" media="screen" href="marquee_style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Auto Brand Logos Slider</title>
 <style>
-/* @keyframes marquee {
-    0% {
-        transform: translateX(0);
-    }
-    100% {
-        transform: translateX(calc(-100% - 20px));
-    }
+  :root {
+    --items-per-page: 8;
 }
-.marquee-test {
-    display: flex;
-    overflow: hidden;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    user-select: none;
-    gap: 20px;
+
+.carousel {
     width: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-}
-.marquee--inner-test {
-    flex-shrink: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: 80px;
-    min-width: 100%;
-    animation: marquee 25s linear infinite;
-  
-}
-.mq-data img{
-  height:80px;
-} */
-
-
-@keyframes slides {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-
-.logos {
-  overflow: hidden;
-  padding: 30px 0px;
-  white-space: nowrap;
-  position: relative;
-}
-
-.logo_items {
-  display: inline-block;
-  animation: 35s slides infinite linear;
-}
-
-.logo_items img{
-  height:80px;
-}
-.mq-data{
-  display: inline-block;
-  padding:0 25px;
-}
-
-
-
-.logos-slider {
-    display: flex;
-    flex-wrap: nowrap;
     overflow: hidden;
     position: relative;
 }
 
-.logos-slider-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 5rem;
-    animation: slide 30s linear infinite;
+.carousel-container {
+    white-space: nowrap;
 }
 
-.logos-slider-container img {
-  width:auto;
-  max-width:100px;
- max-height: 80px;
+.carousel-item {
+    display: inline-block;
+     min-width: calc(100% / var(--items-per-page)); /* Display 3 items at a time */
+    box-sizing: border-box;
+    padding: 0 25px;
+    text-align: center;
 }
-
-@keyframes slide {
-  0% {
-    transform: translate3d(0,0,0)
-  }
-  100% {
-    transform: translate3d(-100%,0,0)
-  }
+.carousel-item img {
+height:60px;
 }
-
-
-.card {
-  background: white;
-  padding: 2rem;
-  border-radius: 1rem;
-  max-width: 900px;
-  margin: 0 auto;
-  box-shadow: 0px 3px 8px rgb(61 74 84 / 10%), 0px 3px 12px rgb(61 74 84 / 6%)
-}
-
-
-
-
 
 </style>
 </head>
 <body>
 
-  <div class="logos">
-    <div class="logo_items">
-      <div class="mq-data">
-        <img class="epic" src="images/hotel_brand_logo1.jpg">
-      </div>
-      <div class="mq-data">
-        <img class="epic" src="images/hotel_brand_logo2.jpg">
-      </div>
-      <div class="mq-data">
-        <img class="epic" src="images/hotel_brand_logo3.jpg">
-      </div>
-      <div class="mq-data">
-        <img class="epic" src="images/hotel_brand_logo4.jpg">
-      </div>
-      <div class="mq-data">
-        <img class="epic" src="images/hotel_brand_logo5.jpg">
-      </div>
-      <div class="mq-data">
-        <img class="epic" src="images/hotel_brand_logo6.jpg">
-      </div>
-      <div class="mq-data">
-        <img class="epic" src="images/hotel_brand_logo7.jpg">
-      </div>
-      <div class="mq-data">
-        <img class="epic" src="images/hotel_brand_logo8.jpg">
-      </div>
-      <div class="mq-data">
-        <img class="epic" src="images/hotel_brand_logo9.jpg">
-      </div>
-      <div class="mq-data">
-        <img class="epic" src="images/hotel_brand_logo10.jpg">
-      </div>
-      <div class="mq-data">
-        <img class="epic" src="images/hotel_brand_logo11.jpg">
-      </div>
-      <div class="mq-data">
-        <img class="epic" src="images/hotel_brand_logo12.jpg">
-      </div>
+
+
+  <div class="carousel" id="carousel" role="region" aria-label="Logo Carousel">
+    <div class="carousel-container" id="carouselContainer" role="list">
+        <div class="carousel-item" role="listitem">
+          <img src="images/hotel_brand_logo1.jpg"  alt="" />
+        </div>
+        <div class="carousel-item" role="listitem">
+          <img src="images/hotel_brand_logo2.jpg"  alt="" />
+        </div>
+        <div class="carousel-item" role="listitem">
+          <img src="images/hotel_brand_logo3.jpg"  alt="" />
+        </div>
+        <div class="carousel-item" role="listitem">
+          <img src="images/hotel_brand_logo4.jpg"  alt="" />
+        </div>
+        <div class="carousel-item" role="listitem">
+          <img src="images/hotel_brand_logo5.jpg"  alt="" />
+        </div>
+        <div class="carousel-item" role="listitem">
+          <img src="images/hotel_brand_logo6.jpg"  alt="" />
+        </div>
+
+        <div class="carousel-item" role="listitem">
+          <img src="images/hotel_brand_logo7.jpg"  alt="" />
+        </div>
+        <div class="carousel-item" role="listitem">
+          <img src="images/hotel_brand_logo8.jpg"  alt="" />
+        </div>
+
+        <div class="carousel-item" role="listitem">
+          <img src="images/hotel_brand_logo9.jpg"  alt="" />
+        </div>
+
+        <div class="carousel-item" role="listitem">
+          <img src="images/hotel_brand_logo10.jpg"  alt="" />
+        </div>
+
+        <div class="carousel-item" role="listitem">
+          <img src="images/hotel_brand_logo11.jpg"  alt="" />
+        </div>
+
+        <div class="carousel-item" role="listitem">
+          <img src="images/hotel_brand_logo12.jpg"  alt="" />
+        </div>
     </div>
-
-    <div class="logo_items">
-      <div class="mq-data">
-        <img class="epic" src="images/hotel_brand_logo1.jpg">
-      </div>
-      <div class="mq-data">
-        <img class="epic" src="images/hotel_brand_logo2.jpg">
-      </div>
-      <div class="mq-data">
-        <img class="epic" src="images/hotel_brand_logo3.jpg">
-      </div>
-      <div class="mq-data">
-        <img class="epic" src="images/hotel_brand_logo4.jpg">
-      </div>
-      <div class="mq-data">
-        <img class="epic" src="images/hotel_brand_logo5.jpg">
-      </div>
-      <div class="mq-data">
-        <img class="epic" src="images/hotel_brand_logo6.jpg">
-      </div>
-      <div class="mq-data">
-        <img class="epic" src="images/hotel_brand_logo7.jpg">
-      </div>
-      <div class="mq-data">
-        <img class="epic" src="images/hotel_brand_logo8.jpg">
-      </div>
-      <div class="mq-data">
-        <img class="epic" src="images/hotel_brand_logo9.jpg">
-      </div>
-      <div class="mq-data">
-        <img class="epic" src="images/hotel_brand_logo10.jpg">
-      </div>
-      <div class="mq-data">
-        <img class="epic" src="images/hotel_brand_logo11.jpg">
-      </div>
-      <div class="mq-data">
-        <img class="epic" src="images/hotel_brand_logo12.jpg">
-      </div>
-    </div>
-  </div>
+</div>
 
 
+<!-- 
+
+
+<div class="slider">
+	<div class="slide-track">
+		<div class="slide">
+			<img src="images/hotel_brand_logo1.jpg"  alt="" />
+		</div>
+		<div class="slide">
+			<img src="images/hotel_brand_logo2.jpg" alt="" />
+		</div>
+		<div class="slide">
+			<img src="images/hotel_brand_logo3.jpg"   alt="" />
+		</div>
+		<div class="slide">
+			<img src="images/hotel_brand_logo4.jpg"  alt="" />
+		</div>
+		<div class="slide">
+			<img src="images/hotel_brand_logo5.jpg"   alt="" />
+		</div>
+		<div class="slide">
+			<img src="images/hotel_brand_logo6.jpg"  alt="" />
+		</div>
+		<div class="slide">
+			<img src="images/hotel_brand_logo7.jpg" alt="" />
+		</div>
+
+    <div class="slide">
+			<img src="images/hotel_brand_logo1.jpg"  alt="" />
+		</div>
+		<div class="slide">
+			<img src="images/hotel_brand_logo2.jpg" alt="" />
+		</div>
+		<div class="slide">
+			<img src="images/hotel_brand_logo3.jpg"   alt="" />
+		</div>
+		<div class="slide">
+			<img src="images/hotel_brand_logo4.jpg"  alt="" />
+		</div>
+		<div class="slide">
+			<img src="images/hotel_brand_logo5.jpg"   alt="" />
+		</div>
+		<div class="slide">
+			<img src="images/hotel_brand_logo6.jpg"  alt="" />
+		</div>
+		<div class="slide">
+			<img src="images/hotel_brand_logo7.jpg" alt="" />
+		</div>
+
+	</div>
+</div>
+ -->
 
 
 
-  <div class="card">
-    <div class="logos-slider">
-      <div class="logos-slider-container">
-        <img src="https://s3-eu-west-1.amazonaws.com/manus-assets-staging.amboss.com/2021/10/1b5efb6e18709f345d9df2d515ef94ff/AMBOSS_Kliniklizenz_Vinzenz-Gruppe-1.png"/>
-        <img src="https://s3-eu-west-1.amazonaws.com/manus-assets-staging.amboss.com/2021/10/baa838917cbc8d345518f3e132bc8fd7/AMBOSS_Kliniklizenz_Universita%CC%88tsklinikum-Bonn-1.png"/>
-        <img src="https://s3-eu-west-1.amazonaws.com/manus-assets-staging.amboss.com/2021/10/cd3fd64c28d1eaa45dabe4d8030cafa4/AMBOSS_Kliniklizenz_Uniklinikum-Salzburg-1.png"/>
-        <img src="https://s3-eu-west-1.amazonaws.com/manus-assets-staging.amboss.com/2021/10/b5bc29f12bc44a3479e1f5a7a880e5eb/AMBOSS_Kliniklizenz_Rems-Murr-Kliniken-1.png"/>
-        <img src="https://s3-eu-west-1.amazonaws.com/manus-assets-staging.amboss.com/2021/10/5a744744b6aabec44952fe173ad803b3/AMBOSS_Kliniklizenz_Klinikum-Wolfsburg-1.png"/>
-        <img src="https://s3-eu-west-1.amazonaws.com/manus-assets-staging.amboss.com/2021/10/9b08a88ad97780c4ed8c8770043be668/AMBOSS_Kliniklizenz_Klinikum-Brandenburg-1.png"/>
-        <img src="https://s3-eu-west-1.amazonaws.com/manus-assets-staging.amboss.com/2021/10/626e09169400efb489aa78be3b504e62/drk-logo2.png"/>
-        <img src="https://s3-eu-west-1.amazonaws.com/manus-assets-staging.amboss.com/2021/10/8fe266d7a9511b84ddf573354fa7a6d9/AMBOSS_Kliniklizenz_Clinotel-1.png"/>
-        <img src="https://s3-eu-west-1.amazonaws.com/manus-assets-staging.amboss.com/2021/10/e10134edbc072db485aebf5e5decd94d/AwO.png"/>
-        <img src="https://s3-eu-west-1.amazonaws.com/manus-assets-staging.amboss.com/2021/10/cac79a920d8213d429efbaad8d6854fa/AMBOSS_Kliniklizenz_AMEOS-1.png"/>
-      </div>
-    
-      <div class="logos-slider-container">
-        <img src="https://s3-eu-west-1.amazonaws.com/manus-assets-staging.amboss.com/2021/10/1b5efb6e18709f345d9df2d515ef94ff/AMBOSS_Kliniklizenz_Vinzenz-Gruppe-1.png"/>
-        <img src="https://s3-eu-west-1.amazonaws.com/manus-assets-staging.amboss.com/2021/10/baa838917cbc8d345518f3e132bc8fd7/AMBOSS_Kliniklizenz_Universita%CC%88tsklinikum-Bonn-1.png"/>
-        <img src="https://s3-eu-west-1.amazonaws.com/manus-assets-staging.amboss.com/2021/10/cd3fd64c28d1eaa45dabe4d8030cafa4/AMBOSS_Kliniklizenz_Uniklinikum-Salzburg-1.png"/>
-        <img src="https://s3-eu-west-1.amazonaws.com/manus-assets-staging.amboss.com/2021/10/b5bc29f12bc44a3479e1f5a7a880e5eb/AMBOSS_Kliniklizenz_Rems-Murr-Kliniken-1.png"/>
-        <img src="https://s3-eu-west-1.amazonaws.com/manus-assets-staging.amboss.com/2021/10/5a744744b6aabec44952fe173ad803b3/AMBOSS_Kliniklizenz_Klinikum-Wolfsburg-1.png"/>
-        <img src="https://s3-eu-west-1.amazonaws.com/manus-assets-staging.amboss.com/2021/10/9b08a88ad97780c4ed8c8770043be668/AMBOSS_Kliniklizenz_Klinikum-Brandenburg-1.png"/>
-        <img src="https://s3-eu-west-1.amazonaws.com/manus-assets-staging.amboss.com/2021/10/626e09169400efb489aa78be3b504e62/drk-logo2.png"/>
-        <img src="https://s3-eu-west-1.amazonaws.com/manus-assets-staging.amboss.com/2021/10/8fe266d7a9511b84ddf573354fa7a6d9/AMBOSS_Kliniklizenz_Clinotel-1.png"/>
-        <img src="https://s3-eu-west-1.amazonaws.com/manus-assets-staging.amboss.com/2021/10/e10134edbc072db485aebf5e5decd94d/AwO.png"/>
-        <img src="https://s3-eu-west-1.amazonaws.com/manus-assets-staging.amboss.com/2021/10/cac79a920d8213d429efbaad8d6854fa/AMBOSS_Kliniklizenz_AMEOS-1.png"/>
-      </div>
-    </div>
-    </div>  
+  <script>
+
+const carouselContainer = document.getElementById('carouselContainer');
+
+// Clone the carousel content to create a continuous loop
+const carouselItems = carouselContainer.innerHTML;
+carouselContainer.innerHTML += carouselItems;
+
+// Set up animation
+let scrollLeft = 0;
+const scrollSpeed = 4; // Adjust the scroll speed as needed
+
+function animateCarousel(timestamp) {
+    if (!lastTimestamp) {
+        lastTimestamp = timestamp;
+    }
+
+    const deltaTime = timestamp - lastTimestamp;
+    lastTimestamp = timestamp;
+
+    scrollLeft += scrollSpeed * deltaTime / 60; // Normalize speed
+    if (scrollLeft >= carouselContainer.scrollWidth / 2) {
+        scrollLeft = 0;
+    }
+    carouselContainer.style.transform = `translateX(-${scrollLeft}px)`;
+
+    requestAnimationFrame(animateCarousel);
+}
+
+let lastTimestamp = null;
+requestAnimationFrame(animateCarousel);
 
 
-    <!-- <div class="marquee stop">
-        <div class="marquee--inner">
-          <div class="mq-data">
-            <img class="epic" src="https://cdn.dribbble.com/uploads/47177/original/3986915be548424a5d36657f2b034ead.jpeg?">
-          </div>
-          <div class="mq-data">
-            <img class="epic" src="https://cdn.dribbble.com/uploads/47177/original/3986915be548424a5d36657f2b034ead.jpeg?">
-          </div>
-          <div class="mq-data">
-            <img class="epic" src="https://cdn.dribbble.com/uploads/47177/original/3986915be548424a5d36657f2b034ead.jpeg?">
-          </div>
-          <div class="mq-data">
-            <img class="epic" src="https://cdn.dribbble.com/uploads/47177/original/3986915be548424a5d36657f2b034ead.jpeg?">
-          </div>
-          <div class="mq-data">
-            <img class="epic" src="https://cdn.dribbble.com/uploads/47177/original/3986915be548424a5d36657f2b034ead.jpeg?">
-          </div>
-          <div class="mq-data">
-            <img class="epic" src="https://cdn.dribbble.com/uploads/47170/original/cd3266dde4f00a5d6a509c7375ddaecd.png">
-          </div>
-        </div>
-        <div class="marquee--inner" aria-hidden="true">
-          <div class="mq-data">
-            <img class="epic" src="https://cdn.dribbble.com/uploads/47177/original/3986915be548424a5d36657f2b034ead.jpeg?">
-          </div>
-          <div class="mq-data">
-            <img class="epic" src="https://cdn.dribbble.com/uploads/47177/original/3986915be548424a5d36657f2b034ead.jpeg?">
-          </div>
-          <div class="mq-data">
-            <img class="epic" src="https://cdn.dribbble.com/uploads/47177/original/3986915be548424a5d36657f2b034ead.jpeg?">
-          </div>
-          <div class="mq-data">
-            <img class="epic" src="https://cdn.dribbble.com/uploads/47177/original/3986915be548424a5d36657f2b034ead.jpeg?">
-          </div>
-          <div class="mq-data">
-            <img class="epic" src="https://cdn.dribbble.com/uploads/47177/original/3986915be548424a5d36657f2b034ead.jpeg?">
-          </div>
-          <div class="mq-data">
-            <img class="epic" src="https://cdn.dribbble.com/uploads/47170/original/cd3266dde4f00a5d6a509c7375ddaecd.png">
-          </div>
-        </div>
-      </div>
-      <div class="marquee stop">
-        <div class="marquee--inner">
-          <div class="mq-data">
-            <img class="epic" src="images/hotel_brand_logo1.jpg">
-          </div>
-          <div class="mq-data">
-            <img class="epic" src="images/hotel_brand_logo2.jpg">
-          </div>
-          <div class="mq-data">
-            <img class="epic" src="images/hotel_brand_logo3.jpg">
-          </div>
-          <div class="mq-data">
-            <img class="epic" src="images/hotel_brand_logo4.jpg">
-          </div>
-          <div class="mq-data">
-            <img class="epic" src="images/hotel_brand_logo5.jpg">
-          </div>
-          <div class="mq-data">
-            <img class="epic" src="images/hotel_brand_logo6.jpg">
-          </div>
-          <div class="mq-data">
-            <img class="epic" src="images/hotel_brand_logo7.jpg">
-          </div>
-          <div class="mq-data">
-            <img class="epic" src="images/hotel_brand_logo8.jpg">
-          </div>
-          <div class="mq-data">
-            <img class="epic" src="images/hotel_brand_logo9.jpg">
-          </div>
-          <div class="mq-data">
-            <img class="epic" src="images/hotel_brand_logo10.jpg">
-          </div>
-          <div class="mq-data">
-            <img class="epic" src="images/hotel_brand_logo11.jpg">
-          </div>
+  </script>
 
-          <div class="mq-data">
-            <img class="epic" src="images/hotel_brand_logo12.jpg">
-          </div>
 
-        </div>
-        <div class="marquee--inner" aria-hidden="true">
-          <div class="mq-data">
-            <img class="epic" src="images/hotel_brand_logo1.jpg">
-          </div>
-          <div class="mq-data">
-            <img class="epic" src="images/hotel_brand_logo2.jpg">
-          </div>
-          <div class="mq-data">
-            <img class="epic" src="images/hotel_brand_logo3.jpg">
-          </div>
-          <div class="mq-data">
-            <img class="epic" src="images/hotel_brand_logo4.jpg">
-          </div>
-          <div class="mq-data">
-            <img class="epic" src="images/hotel_brand_logo5.jpg">
-          </div>
-          <div class="mq-data">
-            <img class="epic" src="images/hotel_brand_logo6.jpg">
-          </div>
-          <div class="mq-data">
-            <img class="epic" src="images/hotel_brand_logo7.jpg">
-          </div>
-          <div class="mq-data">
-            <img class="epic" src="images/hotel_brand_logo8.jpg">
-          </div>
-          <div class="mq-data">
-            <img class="epic" src="images/hotel_brand_logo9.jpg">
-          </div>
-          <div class="mq-data">
-            <img class="epic" src="images/hotel_brand_logo10.jpg">
-          </div>
-          <div class="mq-data">
-            <img class="epic" src="images/hotel_brand_logo11.jpg">
-          </div>
-
-          <div class="mq-data">
-            <img class="epic" src="images/hotel_brand_logo12.jpg">
-          </div>
-        </div>
-      </div> -->
 </body>
 </html>
 
