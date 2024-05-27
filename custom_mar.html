@@ -7,141 +7,93 @@
     <title>Auto Brand Logos Slider</title>
 <style>
   :root {
-    --items-per-page: 8;
+    --items-per-page: 9;
 }
 
-.carousel {
+.brandcarousel {
     width: 100%;
     overflow: hidden;
     position: relative;
 }
 
-.carousel-container {
+.brandcarousel-container {
     white-space: nowrap;
 }
 
-.carousel-item {
+.brandcarousel-item {
     display: inline-block;
      min-width: calc(100% / var(--items-per-page)); /* Display 3 items at a time */
     box-sizing: border-box;
     padding: 0 25px;
     text-align: center;
 }
-.carousel-item img {
-height:60px;
+.brandcarousel-item img {
+  height:80px;
+}
+
+@media (max-width:767px){
+  .brandcarousel-item img {
+  height:60px;
+}
 }
 
 </style>
 </head>
 <body>
 
+<div style="height:500px;"></div>
 
-
-  <div class="carousel" id="carousel" role="region" aria-label="Logo Carousel">
-    <div class="carousel-container" id="carouselContainer" role="list">
-        <div class="carousel-item" role="listitem">
+  <div class="brandcarousel" id="brandcarousel" role="region" aria-label="Logo Carousel">
+    <div class="brandcarousel-container" id="brandcarouselContainer" role="list">
+        <div class="brandcarousel-item" role="listitem">
           <img src="images/hotel_brand_logo1.jpg"  alt="" />
         </div>
-        <div class="carousel-item" role="listitem">
+        <div class="brandcarousel-item" role="listitem">
           <img src="images/hotel_brand_logo2.jpg"  alt="" />
         </div>
-        <div class="carousel-item" role="listitem">
+        <div class="brandcarousel-item" role="listitem">
           <img src="images/hotel_brand_logo3.jpg"  alt="" />
         </div>
-        <div class="carousel-item" role="listitem">
+        <div class="brandcarousel-item" role="listitem">
           <img src="images/hotel_brand_logo4.jpg"  alt="" />
         </div>
-        <div class="carousel-item" role="listitem">
+        <div class="brandcarousel-item" role="listitem">
           <img src="images/hotel_brand_logo5.jpg"  alt="" />
         </div>
-        <div class="carousel-item" role="listitem">
+        <div class="brandcarousel-item" role="listitem">
           <img src="images/hotel_brand_logo6.jpg"  alt="" />
         </div>
 
-        <div class="carousel-item" role="listitem">
+        <div class="brandcarousel-item" role="listitem">
           <img src="images/hotel_brand_logo7.jpg"  alt="" />
         </div>
-        <div class="carousel-item" role="listitem">
+        <div class="brandcarousel-item" role="listitem">
           <img src="images/hotel_brand_logo8.jpg"  alt="" />
         </div>
 
-        <div class="carousel-item" role="listitem">
+        <div class="brandcarousel-item" role="listitem">
           <img src="images/hotel_brand_logo9.jpg"  alt="" />
         </div>
 
-        <div class="carousel-item" role="listitem">
+        <div class="brandcarousel-item" role="listitem">
           <img src="images/hotel_brand_logo10.jpg"  alt="" />
         </div>
 
-        <div class="carousel-item" role="listitem">
+        <div class="brandcarousel-item" role="listitem">
           <img src="images/hotel_brand_logo11.jpg"  alt="" />
         </div>
 
-        <div class="carousel-item" role="listitem">
+        <div class="brandcarousel-item" role="listitem">
           <img src="images/hotel_brand_logo12.jpg"  alt="" />
         </div>
     </div>
 </div>
 
 
-<!-- 
-
-
-<div class="slider">
-	<div class="slide-track">
-		<div class="slide">
-			<img src="images/hotel_brand_logo1.jpg"  alt="" />
-		</div>
-		<div class="slide">
-			<img src="images/hotel_brand_logo2.jpg" alt="" />
-		</div>
-		<div class="slide">
-			<img src="images/hotel_brand_logo3.jpg"   alt="" />
-		</div>
-		<div class="slide">
-			<img src="images/hotel_brand_logo4.jpg"  alt="" />
-		</div>
-		<div class="slide">
-			<img src="images/hotel_brand_logo5.jpg"   alt="" />
-		</div>
-		<div class="slide">
-			<img src="images/hotel_brand_logo6.jpg"  alt="" />
-		</div>
-		<div class="slide">
-			<img src="images/hotel_brand_logo7.jpg" alt="" />
-		</div>
-
-    <div class="slide">
-			<img src="images/hotel_brand_logo1.jpg"  alt="" />
-		</div>
-		<div class="slide">
-			<img src="images/hotel_brand_logo2.jpg" alt="" />
-		</div>
-		<div class="slide">
-			<img src="images/hotel_brand_logo3.jpg"   alt="" />
-		</div>
-		<div class="slide">
-			<img src="images/hotel_brand_logo4.jpg"  alt="" />
-		</div>
-		<div class="slide">
-			<img src="images/hotel_brand_logo5.jpg"   alt="" />
-		</div>
-		<div class="slide">
-			<img src="images/hotel_brand_logo6.jpg"  alt="" />
-		</div>
-		<div class="slide">
-			<img src="images/hotel_brand_logo7.jpg" alt="" />
-		</div>
-
-	</div>
-</div>
- -->
-
-
-
+<div style="height:1500px;"></div>
   <script>
 
-const carouselContainer = document.getElementById('carouselContainer');
+const carouselContainer = document.getElementById('brandcarouselContainer');
 
 // Clone the carousel content to create a continuous loop
 const carouselItems = carouselContainer.innerHTML;
